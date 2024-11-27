@@ -4,7 +4,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 @Service
-public class agendamento {
+public class Agendamento {
 
     public boolean isPrimo(int number) {
         if (number <= 1) {
@@ -23,7 +23,7 @@ public class agendamento {
         int count = 2;
         System.out.println("Números primos:");
 
-        while (count < 100) {
+        while (count <= 200) {
             if (isPrimo(count)) {
                 System.out.println(count);
             }
